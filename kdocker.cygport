@@ -1,0 +1,14 @@
+inherit qt5-qmake
+
+NAME="kdocker"
+VERSION=5.0
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="Dock any application to the system tray"
+DESCRIPTION="KDocker will help you dock any application in the system tray.
+Just point and click. Works for both KDE and GNOME, and should work for most
+modern window managers that support NET WM Specification."
+HOMEPAGE="http://kdocker.com/"
+SRC_URI="https://github.com/user-none/KDocker/archive/${VERSION}/KDocker-${VERSION}.tar.gz"
+SRC_DIR="KDocker-${VERSION}"
+PATCH_URI="5.0-qtsa-compile.patch"
